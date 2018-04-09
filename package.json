@@ -1,0 +1,53 @@
+{
+  "name": "react-native-boilerplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "linking": "node node_modules/react-native/local-cli/cli.js link",
+    "test": "yarn jest && flow && eslint .",
+    "jest": "node node_modules/jest/bin/jest.js",
+    "precommit": "yarn test"
+  },
+  "dependencies": {
+    "lodash": "^4.17.5",
+    "native-base": "^2.4.1",
+    "react": "^16.3.1",
+    "react-native": "0.55.1",
+    "react-navigation": "^1.5.11",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-api-middleware": "^2.3.0",
+    "redux-form": "^7.3.0",
+    "redux-persist": "^5.9.1",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.12",
+    "remote-redux-devtools-on-debugger": "^0.8.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.69.0",
+    "flow-typed": "^2.4.0",
+    "husky": "^0.14.3",
+    "jest": "22.4.3",
+    "react-test-renderer": "^16.3.1"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|lottie-react-native|expo|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-navigation|native-base|@expo|react-native-scrollable-tab-view)/)"
+    ]
+  }
+}
